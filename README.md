@@ -1,1 +1,0 @@
-# 2024_gc_p2_clases_sf
