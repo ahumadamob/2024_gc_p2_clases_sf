@@ -16,7 +16,8 @@ public class Pokemon {
 	private String territorio;
 	private int generacion;
 	private String tipo;
-	private String ataque;	  
+	private String ataque;
+	private String color;
 	
 	public Long getId() {
 		return id;
@@ -66,6 +67,13 @@ public class Pokemon {
 	public void setAtaque(String ataque) {
 		this.ataque = ataque;
 	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
 
 	
 
