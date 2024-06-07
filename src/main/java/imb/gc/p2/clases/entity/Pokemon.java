@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Pokemon {
@@ -15,7 +16,9 @@ public class Pokemon {
 	private String previa;
 	private String territorio;
 	private int generacion;
-	private String tipo;
+	
+	@ManyToOne
+	private TipoPokemon tipo;
 	private String ataque;
 	private String color;
 	
@@ -55,12 +58,7 @@ public class Pokemon {
 	public void setGeneracion(int generacion) {
 		this.generacion = generacion;
 	}
-	public String getTipo() {
-		return tipo;
-	}
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
+
 	public String getAtaque() {
 		return ataque;
 	}
@@ -73,6 +71,18 @@ public class Pokemon {
 	public void setColor(String color) {
 		this.color = color;
 	}
+	
+	private void test() {
+		this.tipo.setNombre(nombre);
+	}
+	public TipoPokemon getTipo() {
+		return tipo;
+	}
+	public void setTipo(TipoPokemon tipo) {
+		this.tipo = tipo;
+	}
+	
+	
 	
 
 	
