@@ -7,4 +7,6 @@ import imb.gc.p2.clases.entity.Pokemon;
 public interface IPokemonService {
 	public List<Pokemon> getAll();
 	public Pokemon getById(Long id);
+	public Pokemon save(Pokemon pokemon);
+	//delete()
 }
