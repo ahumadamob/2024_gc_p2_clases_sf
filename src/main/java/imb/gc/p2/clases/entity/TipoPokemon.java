@@ -14,6 +14,12 @@ public class TipoPokemon {
 	private String nombre;
 	private boolean habilitado;
 	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	public String getNombre() {
 		return nombre;
 	}
