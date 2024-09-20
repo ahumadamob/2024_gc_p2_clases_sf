@@ -60,4 +60,16 @@ public class TipoPokemonServiceImpl implements ITipoPokemonService {
 		
 	}
 
+	@Override
+	public boolean existe(Long id) {
+		if(id == null) {
+			return false;
+		}else {
+			return repo.existsById(id);
+		}
+		
+		// TODO Auto-generated method stub
+		//return false;
+	}
+
 }

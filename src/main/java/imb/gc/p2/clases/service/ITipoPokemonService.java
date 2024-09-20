@@ -9,4 +9,5 @@ public interface ITipoPokemonService {
 	public TipoPokemon mostrarPorId(Long id);
 	public TipoPokemon guardar(TipoPokemon tipoPokemon);
 	public void eliminarPorId(Long id);
+	public boolean existe(Long id);
 }
